@@ -1,0 +1,116 @@
+/*---------------adaptive mobile---------------*/
+/*laptop*/
+@media only screen and (max-width:1320px){
+}
+/*laptop s*/
+@media only screen and (max-width:1024px){
+	/*header*/
+	.logo-flex {
+		width: 25%;
+	}
+}
+/*for tablet*/
+@media only screen and (max-width:768px){
+	.header__wrapper_content {
+		flex-direction: column;
+	}
+	.logo-flex {
+		width: auto;
+	}
+	.menu {
+		font-size: 1em;
+	}
+	.menu ul {
+		display: flex;
+		justify-content: center;
+		padding: 0px;
+	}
+	.menu li {
+		align-self: center;
+		width: 70%;
+		margin: 0px;
+	}
+	.Banner__with-something-new{
+		padding-bottom: 0px;
+		padding-left: 6em;
+	}
+	.container_banner{
+		width: 85%;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.Banner__text-wrap {
+		align-self: center;
+		align-items: center;
+		padding-bottom: 5vh;
+	}
+	.song_list_bannner img {
+		width: 150px;
+		height: 150px;
+	}
+	/*links icons playlist*/
+	.Playlist_lnks__Banner{
+		position: unset;
+		width: 100%;
+		height: auto;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+	}
+}
+@media only screen and (max-width:590px){
+	.title__main-in-Banner {
+		font-size: 4.3em;
+	}
+}
+/*for phone x*/
+@media only screen and (max-width:515px){
+	.title__main-in-Banner {
+		font-size: 3.9em;
+	}
+	.Button__learn-more {
+		width: 100px;
+		font-size: 1em;
+		margin-top: 5px;
+	}
+}
+
+@media only screen and (max-width:465px){
+	.title__main-in-Banner {
+		font-size: 3.2em;
+	}
+	.Button__learn-more {
+		width: 100px;
+		font-size: 1em;
+		margin-top: 5px;
+	}
+}
+/*for phone l*/
+@media only screen and (max-width:435px){
+}
+/*for phone m*/
+@media only screen and (max-width:375px){
+	.Banner__text-wrap {
+		width: 80%;
+	}
+}
+/*for phone s*/
+@media only screen and (max-width:320px){
+}
+
+/*---------------adaptive pc 4k---------------*/
+
+@media only screen and (min-width: 1900px){
+	body {
+		font-size: 12px;
+	}	/*-----mobile banner-----*/
+	.title__main-in-Banner {
+		font-size: 3em;
+	}
+	.
+	.Button__learn-more {
+		width: 200px;
+	}
+}
