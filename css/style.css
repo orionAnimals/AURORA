@@ -1,18 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&family=Kalam:wght@700&family=Laila&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 	/*font-family: 'Josefin Slab', serif;
 	font-family: 'Kalam', cursive;
-	font-family: 'Laila', sans-serif;*/
+	font-family: 'Laila', sans-serif;
+	font-family: 'Pacifico', cursive;
+	*/
 
 *, *:before, *:after {
 	box-sizing: border-box; 
 }
 body {
-    background: rgb(22,76,156);
-    background: radial-gradient(circle, rgba(22,76,156,1) 0%, rgba(34,72,138,1) 4%, rgba(27,56,106,1) 20%, rgba(22,44,83,1) 31%, rgba(11,32,70,1) 42%, rgba(4,24,61,1) 52%);
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+
+
+/*
+	background: rgba(205, 128, 50, 1.0);
+	background: -webkit-linear-gradient(bottom, rgba(205, 128, 50, 1.0), rgba(0, 0, 0, 1.0));
+	background: -moz-linear-gradient(bottom, rgba(205, 128, 50, 1.0), rgba(0, 0, 0, 1.0));
+	background: linear-gradient(to top, rgba(205, 128, 50, 1.0), rgba(0, 0, 0, 1.0));*/
+
+
+
+	background-size: cover;
+	background-attachment: fixed !important;
     color: #fff;
     margin: 0px;
     padding: 0px;
     height: auto;
+    min-width: 320px;
     max-width: auto;
     font-size: 10px;
     font-family: sans-serif;
@@ -42,6 +58,34 @@ a{
 ul {
 	padding: 0px;
 }
+/*title hover inside link or text*/
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.3s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #333;
+    color: #fff;
+    font-family: 'Kalam', cursive;
+    font-size: 13px;
+    position: absolute;
+    padding: 5px;
+    bottom: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: none;
+    border-radius: 5px;
+    z-index: 100;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
+}
+
 input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: none;
 	height: 1em;
@@ -59,7 +103,6 @@ input[type="search"]:focus::-webkit-search-cancel-button {
 }
 header {
 	position: fixed;
-	transition: .3s;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -159,7 +202,7 @@ header {
 	z-index: 5;
 	bottom: 0px;
 	left: 0px;
-	width: 100vw;
+	width: 100%;
 	height: 50px;
 	background-color: rgba(44, 44, 44, .75);
     -webkit-backdrop-filter: blur(20px);
@@ -253,8 +296,7 @@ main {
 	height: 100vh;
 	min-height: 550px;
 	padding-bottom: 5vh;
-	background: url(../img/banner__main_home.jpg) no-repeat center center;
-	background-color: #c9c9c9;
+	background: url(../img/banner__main_home.jpg) no-repeat center center; 
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -270,9 +312,12 @@ main {
 .Playlist_lnks__Banner{
 	width: auto;
 	height: auto;
+	padding: 5px;
 	display: flex;
 	position: absolute;
-	right: 100px;
+	right: 20px;
+	background-color: #fff;
+	border-radius: 20px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -284,13 +329,13 @@ main {
 	margin-top: .5em;
 	width: 1.3em;
 	height: 1.3em;
-	font-size: 3em;
-	color: #fff;
-	opacity: .8;
+	font-size: 2.5em;
 	transition: .4s;
+	color: #999;
+	opacity: 1;
 }
 .link_icon:hover {
-	opacity: 1;
+	color: #000;
 }
 
 .Banner__text-wrap {
@@ -308,7 +353,8 @@ main {
 .title__main-in-Banner {
 	align-self: start;
 	font-size: 4.5em;
-	font-family: cursive;
+	font-family: 'Pacifico', cursive;
+	font-weight: 100;
 }
 .container_for_ai_btn {
 	display: flex;
@@ -316,6 +362,7 @@ main {
 	align-items: center;
 	flex-direction: column;
 }
+/*!!!!! ---Songs list in banner img's--- !!!!!*/
 .wrapper_songs_list_banner {
 	width: auto;
 	height: auto;
@@ -339,7 +386,7 @@ main {
 .song_list_bannner img {
 	width: 180px;
 	height: 180px;
-	opacity: .9;
+	opacity: 1;
 	z-index: 1;
 	border-radius: 15px;
 }
@@ -353,9 +400,9 @@ main {
 	visibility: hidden;
 	position: absolute;
 	z-index: 2;
-	font-family: cursive;
-	font-size: 2em;
-	font-weight: 700;
+	font-family: 'Pacifico', cursive;
+	font-size: 1.8em;
+	font-weight: 100;
 	align-self: flex-start;
 	margin-top: 20px;
 }
@@ -386,7 +433,7 @@ main {
 	padding: 5px;
 	margin-top: 10px;
 	border: 2px solid #fff;
-	border-radius: 10px;
+	border-radius: 15px;
 }
 .Button__learn-more:hover {
 	transition: .4s;
@@ -419,7 +466,7 @@ main {
 	border: none;
 	color: #ddd;
 	opacity: .5;
-	font-size: 5em;
+	font-size: 4em;
 	padding: 1%;
 	cursor: pointer;
 	transition: .5s;
@@ -485,17 +532,17 @@ main {
 .wrapper_for_img:hover .new_status {
 	display: none;
 }
-.new_mark {
+.Type {
 	font-size: 1em;
 	margin-top: 10px;
-	color: #bf4800;
+	color: #777;
 }
 .wrapper_for_img {
 	width: 100%;
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	background-color: #000;
+	background-color: #111;
 	border-radius: 13px;
 	cursor: pointer;
 	display: flex;
@@ -514,9 +561,9 @@ main {
 	border-radius: 13px;
 }
 .wrapper_for_img:hover img {
-	filter: blur(2px);
-	opacity: .6;
-	transition: .4s;
+	filter: blur(3px);
+	opacity: .7;
+	transition: .2s;
 }
 .timer_song_card {
 	display: block;
@@ -531,6 +578,23 @@ main {
 	border-radius: 10px;
 	font-size: 1.3em;
 }
+.current_timer_song_card {
+	display: none;
+	position: absolute;
+	z-index: 3;
+	left: 1em;
+	bottom: 1em;
+	padding: 3px 0px;
+	width: 45px;
+	height: auto;
+	background-color: #333;
+	border-radius: 10px;
+	font-size: 1.3em;
+}
+.wrapper_for_img:hover .current_timer_song_card {
+	display: block;
+}
+
 /*btn hover play and more*/
 .play_btn_card {
 	display: none;
@@ -539,6 +603,9 @@ main {
 	font-size: 4.5em;
 	transition: 0.4s;
 	align-self: center;
+}
+.play_btn_card:hover {
+	scale: 1.2;
 }
 .wrapper_for_img:hover .play_btn_card {
 	display: block;
@@ -598,4 +665,72 @@ main {
 }
 .wrapper_all_songs_home .card {
 	margin-top: 20px;
+}
+/*test*/
+
+.test {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 400px;
+	background-color: inherit;
+
+}
+.test .card{
+	width: 330px;
+	height: 380px;
+}
+.test .link_style i {
+	color: #fff;
+}
+.play_btn_card {
+	display: none;
+	position: absolute;
+	align-self: center;
+	z-index: 3;
+	font-size: 4.5em;
+	transition: 0.4s;
+	background: initial;
+	opacity: 1;
+	color: #fff;
+	outline: none;
+	border: none;
+}
+
+.timeline_card {
+	display: none;
+	position: absolute;
+	bottom: 1.5em;
+	z-index: 3;
+	background-color: #333;
+	-webkit-appearance: none;
+	width: 65%;
+	height: .8em;
+	border-radius: 0px;
+	opacity: 1;
+	margin: 0px;
+	padding: 0px;
+}
+.timeline_card::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 3px;
+	height: .8em;
+	border-radius: 0%;
+	cursor: pointer;
+	opacity: 1;
+	transition: all .1s;
+	background-color: #fff;
+}
+.timeline_card::-webkit-slider-thumb:hover {
+  background-color: #cdcdcd;
+}
+.timeline_card::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.wrapper_for_img:hover .timeline_card {
+	display: block;
 }

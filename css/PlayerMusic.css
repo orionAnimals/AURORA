@@ -1,0 +1,153 @@
+main {
+	width: 98%;
+	height: 3000px;
+	justify-content: flex-start;
+	padding: 1%;
+}
+
+
+.wrapper_for_Information_pre_video {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: flex-start;
+	width: 75%;
+	height: 60px;
+	background-color: rgba(255, 255, 255, 0.1);
+	opacity: 1;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+	border-radius: 15px;
+	margin: 1%;
+	margin-top: 0px;
+}
+.name_of_the_song {
+	display: inline-flex;
+	align-items: center;
+	width: auto;
+	height: 100%;
+	align-self: center;
+	color: #fff;
+	font-size: 2.5em;
+	font-family: 'Kalam', cursive;
+}
+
+.wrapper_for_likes_dislikes {
+	position: absolute;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	left: 10px;
+	top: 10px;
+	display: flex;
+	width: 120px;
+	height: 40px;
+	padding: 0px;
+	background-color: rgba(218, 218, 218, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+	border-radius: 15px;
+	color: #d9d9d9;
+	font-size: 1.5em;
+	font-family: 'Laila', sans-serif;
+	text-align: center;
+	transition: .4s;
+}
+.wrapper_for_likes_dislikes:hover {
+	background-color: #000;
+	color: #cdcdcd;
+}
+.wrapper_for_likes_dislikes i {
+	font-size: 1.5em;
+	margin-right: 5px;
+}
+.likes {
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: row;
+	align-self: center;
+	width: 50%;
+	height: auto;
+	cursor: pointer;
+	transition: .4s;
+}
+.likes:hover {
+	color: #fff;
+	margin-bottom: 5px;
+}
+.dislikes {
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: row;
+	align-self: center;
+	width: 50%;
+	height: auto;
+	cursor: pointer;
+	transition: .4s;
+}
+.dislikes:hover {
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.more_btn_Pre_vid {
+	width: 1.7em;
+	height: 1.7em;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	text-align: center;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: flex-end;
+	color: #fff;
+	font-size: 2.5em;
+	border-radius: 50px;
+	background-color: rgba(218, 218, 218, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+	transition: .4s;
+	cursor: pointer;
+}
+.more_btn_Pre_vid:hover {
+	background-color: #000;
+}
+
+.video_main {
+	display: flex;
+	justify-content: center;
+	align-self: flex-start;
+	position: relative;
+	margin: 1%;
+	margin-top: 0px;
+	width: 75%;
+	min-height: 500px;
+	height: auto;
+	background-color: rgba(218, 218, 218, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(70px);
+    border-radius: 15px;
+}
+.video_main video {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	opacity: .9;
+}
+/*??????????? ASIDE ??????????*/
+.aside_rec_wrapp {
+	display: flex;
+	position: fixed;
+	right: .5%;
+	margin-top: 0%;
+	width: 23%;
+	height: 92%;
+	min-height: 500px;
+	background-color: rgba(218, 218, 218, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
