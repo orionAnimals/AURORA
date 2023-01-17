@@ -1,0 +1,583 @@
+.Wrapper_page {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	right: 0px;
+	background: inherit;
+	padding: .5%;
+	padding-left: 67px;
+}
+.wrapper_for_Information_pre_video {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: flex-start;
+	width: 75.5%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 15px;
+}
+.name_of_the_song {
+	display: inline-flex;
+	align-items: center;
+	width: auto;
+	height: 100%;
+	align-self: center;
+	color: #fff;
+	font-size: 2.5em;
+	font-family: 'Kalam', cursive;
+}
+
+.wrapper_for_likes_dislikes {
+	position: absolute;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-self: flex-start;
+	margin-left: 10px;
+	display: flex;
+	width: auto;
+	height: auto;
+	padding: 7px 5px;
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 15px;
+	color: #fff;
+	font-size: 1.7em;
+	font-family: 'Laila', sans-serif;
+	text-align: center;
+	transition: .4s;
+}
+.wrapper_for_likes_dislikes:hover {
+	background-color: #000;
+	color: #cdcdcd;
+}
+.wrapper_for_likes_dislikes i {
+	font-size: 1.5em;
+	margin-right: 5px;
+}
+.wrapper_for_likes_dislikes button {
+	font-size: .8em;
+	color: #fff;
+	border: none;
+	background-color: initial;
+}
+.likes, .dislikes {
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: row;
+	align-self: center;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+	transition: .4s;
+}
+.likes:hover {
+	color: #1DCE00;
+	scale: 1.1;
+}
+.gr {
+	color: #1DCE00 !important;
+}
+.dislikes:hover {
+	color: #CE0000;
+	scale: 1.1;
+}
+
+.more_btn_dots_circle {
+	width: 1.7em;
+	height: 1.7em;
+	position: absolute;
+	margin-right: 10px;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-end;
+	color: #fff;
+	font-size: 2.5em;
+	border-radius: 50px;
+	background-color: transparent;
+	transition: .4s;
+	cursor: pointer;
+	border: none;
+}
+.more_btn_dots_circle:hover {
+	scale: 1.2;
+}
+.video_main {
+	display: flex;
+	justify-content: center;
+	align-self: flex-start;
+	position: relative;
+	z-index: 3;
+	overflow: hidden;
+	margin: .5% 0px;
+	width: 75.5%;
+	min-height: 300px;
+	height: auto;
+	background-color: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+.video_main video {
+	position: unset;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	opacity: .9;
+	border: none;
+}
+.video_main [data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.2s ease .2s;
+    visibility: visible;
+}
+.video_main [data-title]:after {
+    content: attr(data-title);
+    background-color: #333;
+    color: #fff;
+    font-family: 'Kalam', cursive;
+    font-size: 11px;
+    position: absolute;
+    padding: 0px 2px;
+    bottom: 2em;
+    left: 0em;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 1;
+    border: none;
+    border-radius: 5px;
+    z-index: 100;
+    visibility: hidden;
+}
+.video_main [data-title] {
+    position: relative;
+    z-index: 100;
+    opacity: 1;
+}
+/*---Video controls---*/
+
+.wrapper_player_vid {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+	position: absolute;
+	background-color: rgba(0, 0, 0, .6);
+	z-index: 4;
+}
+.wrapper_player_vid .wrapp_name_date_etc {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.3em;
+	color: #cdcdcd;
+	padding: 10px;
+	background: transparent;
+}
+.date_vid, .vievs_vid {
+	margin: 5px;
+	padding: 5px 7px;
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 15px;
+}
+.wrapp_controls_vid {
+	display: flex;
+	align-self: flex-end;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	margin-bottom: 10px;
+}
+
+.wrapp_timeline_main_vid {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-self: center;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
+	padding: .5em;
+	border-radius: 15px;
+	position: relative;
+}
+.Current_time_vid, .End_time_vid {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	background-color: #222;
+	padding: 5px 8px;
+	border-radius: 15px;
+}
+.wrapp_timeline_vid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: unset;
+}
+.timeline_vid {
+	-webkit-appearance: none;
+	display: inline-flex;
+	position: unset;
+	width: 99%;
+	height: 1em;
+	background-color: #777;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+	border-radius: 15px;
+	margin: 0px;
+}
+.timeline_vid::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 50%;
+	cursor: -webkit-grab;
+	cursor: grab;
+	opacity: 1;
+	transition: all 0s;
+	background-color: #fff;
+	z-index: 5;
+	position: unset;
+}
+.timeline_vid::-webkit-slider-thumb:hover {
+  	scale: 1.2;
+}
+.timeline_vid::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	box-shadow: none;
+	border: none;
+	background-color: initial;
+}
+
+.wrapp_some_buttons_vid {
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 0px 10px;
+}
+.sound_control_wrapp_vid {
+	display: block;
+	width: 150px;
+	height: 3em;
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 15px;
+	align-self: flex-start;
+}
+.wrp_left_btns_vid {
+	display: flex;
+	font-display: row;
+	width: auto;
+	height: auto;
+}
+.wrapp_some_buttons_vid button {
+	display: inline-flex;
+	align-self: center;
+	width: auto;
+	height: auto;
+	background-color: transparent;
+	color: #cdcdcd;
+	font-size: 1.8em;
+	border: none;
+	cursor: pointer;
+	transition: all ease 300ms;
+	margin-right: 8px;
+	padding: 0px;
+}
+.wrp_right_btns_vid {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	max-width: 50px;
+	height: auto;
+}
+.wrapp_some_buttons_vid button:hover {
+	scale: 1.3;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*??????????? ASIDE ??????????*/
+.aside_rec_wrapp {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	right: .5%;
+	padding: 10px 5px;
+	width: 23%;
+	height: 98%;
+	min-height: 500px;
+	background-color: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+
+.Recomendation_scroll_block {
+	width: 98%;
+	height: 100%;
+	background-color: initial;
+	overflow-y: scroll;
+	border-radius: 15px;
+}
+
+.Recomendation_scroll_block::-webkit-scrollbar{
+	display: none;
+}
+.sort_rec {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	color: #000;
+	font-size: 1.5em;
+	text-align: center;
+	border-radius: 15px;
+}
+.rec_card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+.rec_card img {
+	display: inline-flex;
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.wrp_img_time_rec {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	justify-content: flex-end;
+	position: relative;
+	overflow: hidden;
+	border-radius: 15px;
+	width: 40%;
+	height: 100%;
+}
+.end_time_rec {
+	display: block;
+	position: absolute;
+	align-self: flex-end;
+	padding: 5px;
+	margin: 5px;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 10px;
+	font-size: 1.2em;
+}
+
+.wrp_nm_btn_rec {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	width: 100%;
+}
+
+.name_of_the_song_recomend {
+	display: block;
+	width: 100%;
+	height: 2em;
+	text-align: center;
+	margin: 0px;
+	font-size: 1.6em;
+	font-family: 'Kalam', cursive;
+	color: #fff;
+	background-color: initial;
+}
+
+.wrapper_for_date_vievs_rec {
+	display: inline-block;
+	text-align: center;
+	font-size: 1.2em;
+	color: #fff;
+}
+.wrapper_for_date_vievs_rec i {
+	font-size: 1.5em;
+}
+.wrapper_for_date_vievs_rec span {
+	align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*comments*/
+
+.comments_title {
+	display: flex;
+	flex-direction: column;
+	width: 75.5%;
+	height: auto;
+	min-height: 100px;
+	background-color: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    padding: 1%;
+    font-size: 1em;
+}
+.comments_title span {
+	font-size: 1em;
+}
+
+.wrapp_for_comment {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100% auto;
+	height: auto;
+	min-height: 40px;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, .2);
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 15px;
+	position: relative;
+}
+
+.wrapp_for_comment .img_user {
+	align-self: flex-start;
+	display: inline-flex;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.img_user img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+	align-self: center;
+}
+
+.wrapp_for_comment .wrapp_name__comment_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 80%;
+	height: auto;
+	margin-left: 10px;
+}
+.wrapp_for_comment .name_user {
+	display: inline-block;
+	font-family: 'Kalam', cursive;
+	font-size: 1.6em;
+	letter-spacing: 1px;
+	align-self: flex-start;
+}
+.wrapp_for_comment .comment_text {
+	display: inline-block;
+	align-self: flex-start;
+	font-size: 1.6em;
+}
+.wrapp_likes_and_dislikes_com {
+	display: flex;
+	width: auto;
+	min-width: 130px;
+	height: 50px;
+	max-height: 65px;
+	flex-direction: row;
+	align-self: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+	transition: 0.4s;
+}
+
+.wrapp_likes_and_dislikes_com button {
+	display: block;
+	border: none;
+	background-color: initial;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.7em;
+}
+
+.wrapp_likes_and_dislikes_com:hover {
+	background-color: #000;
+}
+
+.wrapp_for_comment .more_btn_dots_circle {
+	background-color: initial;
+	align-self: center;
+	position: unset;
+	margin: 0px;
+}
+.wrapp_for_comment .more_btn_dots_circle:hover {
+	scale: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
